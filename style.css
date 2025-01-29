@@ -255,7 +255,7 @@ p {
   width: 26px;
 }
 
-input:checked?.slider {
+input:checked + .slider {
   background: var(--primary-color);
 }
 
