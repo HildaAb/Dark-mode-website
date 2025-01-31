@@ -9,6 +9,17 @@
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
+[data-theme="light"] {
+  --primary-color: rgb(255, 92, 92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250, 250, 250);
+  --on-background: rgb(66, 66, 66);
+  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --background: rgb(255, 255, 255);
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
 [data-theme="dark"] {
   --primary-color: rgb(150, 65, 255);
   --primary-variant: #6c63ff;
@@ -17,28 +28,6 @@
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #121212;
-}
-
-//// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 700
-
-.comfortaa {
-  font-family: "Comfortaa", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.kaushan-script-regular {
-  font-family: "Kaushan Script", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.oswald {
-  font-family: "Oswald", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
 html {
@@ -51,7 +40,7 @@ nav {
   position: fixed;
   font-family: "Oswald", serif;
   font-size: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   padding: 25px;
   width: 100vw;
   background: rgb(255 255 255 / 50%);
@@ -99,6 +88,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  text-align: center;
   color: var(--on-background-alt);
   font-weight: normal;
 }
@@ -142,7 +132,7 @@ button {
 
 button:disabled {
   opacity: 0.4;
-  cursor: default;
+  cursor: disabled;
 }
 
 button:hover:not(.outline) {
@@ -175,7 +165,7 @@ button:hover:not(.outline) {
   color: var(--on-primary);
 }
 
-.text-box {
+.text {
   width: 40%;
   text-align: justify;
   background: rgb(0 0 0 /50%);
